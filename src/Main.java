@@ -1,5 +1,14 @@
+import java.awt.*;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        int agg = 17;
+        if (agg >= 18) {
+            System.out.println("Поздравление пользователя с совершеннолетием");
+        } else {
+            System.out.println("Совершеннолетия ещё не наступил");
+        }
     }
+    // Задание 2
+    
 }
