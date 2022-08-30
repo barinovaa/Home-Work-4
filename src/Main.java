@@ -2,63 +2,26 @@ import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
-        int agg = 17;
-        if (agg >= 18) {
-            System.out.println("Поздравление пользователя с совершеннолетием");
+        int age = 55;
+        boolean canNotGoToSchool = age >= 2 && age <= 6;
+        boolean canGoToSchool = age >= 7 && age <=18;
+        boolean canGoToUniversity = age >= 18 && age <=24;
+        boolean canGoToWork = age >= 24;
+        if (canNotGoToSchool) {
+            System.out.println("Отправляйся в детский сад");
         } else {
-            System.out.println("Совершеннолетия ещё не наступил");
-        }
-        // Задание 2
-        int kidd = 23;
-        if (kidd <=7) {
-            System.out.println("Ребенок ходит в Школу");
-        }
-        if (kidd >=18)
-        if (kidd <=23) {
-            System.out.println("Отправляться в университет");
-        }
-        if (kidd >=24) {
-            System.out.println("Пора искать первую работу");
-        }
-        // Задание 3
-        int van = 55;
-        if (van <= 59){
-            System.out.println("Остались сидячии и стоячии места");
-        }
-        if (van >=60)
-        if (van <=102) {
-            System.out.println("Остались только стоячие места");
-        }
-        if (van >=103) {
-            System.out.println("Месть нет");
-        }
-        // Условный оператор
-        int year = 5;
-        if (year <=17) {
-            System.out.println("Возраст совершеннолетия ещё не наступил");
+        if (canGoToSchool) {
+            System.out.println("Иди в школу");
         } else {
-            System.out.println("Поздравление пользователя с совершеннолетием");
-        }
-        // Задание 2
-        int kids = 25;
-        if (kids <=7) {
-            System.out.println("Ребенок ходит в Школу");
-        }
-        if (kids >=18)
-            if (kids <=23) {
-                System.out.println("Отправляться в университет");
+            if (canGoToUniversity) {
+                System.out.println("Ты учишься в универститете");
             } else {
-            System.out.println("Пора искать первую работу");
+                if (canGoToWork) {
+                    System.out.println("Давай работай!!");
+                }
+            }
+
         }
-        // Задание 3
-        int vane = 59;
-        if (vane <= 59) {
-            System.out.println("Остались сидячии и стоячии места");
-        }
-        if (vane >=60 && vane <=102) {
-                System.out.println("Остались только стоячие места");
-            } else {
-            System.out.println("Месть нет");
         }
     }
 
