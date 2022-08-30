@@ -9,7 +9,7 @@ public class Main {
             System.out.println("Совершеннолетия ещё не наступил");
         }
         // Задание 2
-        int kidd = 45;
+        int kidd = 23;
         if (kidd <=7) {
             System.out.println("Ребенок ходит в Школу");
         }
@@ -21,7 +21,7 @@ public class Main {
             System.out.println("Пора искать первую работу");
         }
         // Задание 3
-        int van = 103;
+        int van = 55;
         if (van <= 59){
             System.out.println("Остались сидячии и стоячии места");
         }
@@ -30,6 +30,34 @@ public class Main {
             System.out.println("Остались только стоячие места");
         }
         if (van >=103) {
+            System.out.println("Месть нет");
+        }
+        // Условный оператор
+        int year = 5;
+        if (year <=17) {
+            System.out.println("Возраст совершеннолетия ещё не наступил");
+        } else {
+            System.out.println("Поздравление пользователя с совершеннолетием");
+        }
+        // Задание 2
+        int kids = 25;
+        if (kids <=7) {
+            System.out.println("Ребенок ходит в Школу");
+        }
+        if (kids >=18)
+            if (kids <=23) {
+                System.out.println("Отправляться в университет");
+            } else {
+            System.out.println("Пора искать первую работу");
+        }
+        // Задание 3
+        int vane = 59;
+        if (vane <= 59) {
+            System.out.println("Остались сидячии и стоячии места");
+        }
+        if (vane >=60 && vane <=102) {
+                System.out.println("Остались только стоячие места");
+            } else {
             System.out.println("Месть нет");
         }
     }
